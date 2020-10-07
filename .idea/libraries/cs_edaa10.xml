@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="cs_edaa10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/cs_edaa10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/cs_edaa10.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cs_util_window">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/cs_util_window.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
