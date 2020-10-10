@@ -11,11 +11,12 @@
       <sourceFolder url="file://$MODULE_DIR$/cs_edaa10" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libs" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/ovn7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ovn8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ovn5" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/inl2" />
       <excludeFolder url="file://$MODULE_DIR$/inl3" />
       <excludeFolder url="file://$MODULE_DIR$/ovn10" />
       <excludeFolder url="file://$MODULE_DIR$/ovn11" />
-      <excludeFolder url="file://$MODULE_DIR$/ovn5" />
       <excludeFolder url="file://$MODULE_DIR$/ovn9" />
     </content>
     <orderEntry type="inheritedJdk" />

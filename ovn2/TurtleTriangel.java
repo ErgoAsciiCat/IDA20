@@ -1,5 +1,4 @@
 import se.lth.cs.window.SimpleWindow;
-import se.lth.cs.p.ovn.turtle.Turtle;
 public class TurtleTriangel {
 	public static void Triangel(Turtle t){
 		t.penDown();

@@ -1,4 +1,4 @@
-import se.lth.cs.p.ovn.turtle.Turtle;
+//import se.lth.cs.p.ovn.turtle.Turtle;
 import se.lth.cs.window.SimpleWindow;
 import java.util.Scanner;
 public class Mangharningar {
@@ -11,8 +11,6 @@ public class Mangharningar {
 			for (int k = 0; k <= n; k++) {
 				t.forward(sida);
 				t.left(360/n);
-
-				System.out.print(k+" ");
 			}
 
 			t.turnNorth();
