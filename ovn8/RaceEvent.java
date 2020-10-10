@@ -18,15 +18,19 @@ public class RaceEvent {
             Random rand = new Random();
             int t1Y = track.yStart;
             int t2Y = track.yStart;
-            int t1X = (int)Math.round(100.0 / w.getWidth() * 40);
-            int t2X = (int)Math.round(100.0 / w.getWidth() * 60);
+            int t1X = (int)Math.round(w.getWidth() /100.0  * 40);
+            int t2X = (int)Math.round(w.getWidth() /100.0 * 60);
 
             t1.jumpTo(t1X,t1Y);
             t2.jumpTo(t2X,t2Y);
+            t1.penDown();
+            t2.penDown();
 
-            while (t1.getY() < track.yFinish && t2.getY() < track.yFinish){
-                t1.forward(rand.nextInt(2));
-                t2.forward(rand.nextInt(2));
+            while (t1.getY() > track.yFinish && t2.getY() > track.yFinish){
+                t1.forward(rand.nextInt(2)+1);
+                System.out.println ("Turtle 1 is at position X: " + t1.getX() + " and Y: " + t1.getY());
+                t2.forward(rand.nextInt(2)+1);
+                System.out.println ("Turtle 2 is at position X: " + t2.getX() + " and Y: " + t2.getY());
                 SimpleWindow.delay(100);
             }
 

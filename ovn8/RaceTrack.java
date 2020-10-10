@@ -9,10 +9,10 @@ public class RaceTrack {
         this.yFinish = yFinish;
     }
 
-    private void draw (SimpleWindow w){
-        w.moveTo((int)Math.round(100.0 / w.getWidth() * 33),yStart);
-        w.lineTo((int)Math.round(100.0 / w.getWidth() * 66),yStart);
-        w.moveTo((int)Math.round(100.0 / w.getWidth() * 33),yFinish);
-        w.lineTo((int)Math.round(100.0 / w.getWidth() * 66),yFinish);
+    public void draw (SimpleWindow w){
+        w.moveTo((int)Math.round(w.getWidth() /100.0  * 20),yStart);
+        w.lineTo((int)Math.round(w.getWidth() / 100.0 * 80),yStart);
+        w.moveTo((int)Math.round(w.getWidth() / 100.0 * 20),yFinish);
+        w.lineTo((int)Math.round(w.getWidth() / 100.0 * 80),yFinish);
     }
 }
