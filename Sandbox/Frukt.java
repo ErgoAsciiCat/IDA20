@@ -1,5 +1,5 @@
 public class Frukt {
-	private String country;
+	private final String country;
 
 	public Frukt(String country) {
 		this.country = country;
@@ -11,7 +11,7 @@ public class Frukt {
 }
 
 class Apelsin extends Frukt {
-	private double w;
+	private final double w;
 
 	public Apelsin(String country, double weight) {
 		super(country);
@@ -24,7 +24,7 @@ class Apelsin extends Frukt {
 }
 
 class Banan extends Frukt {
-	private double length;
+	private final double length;
 
 	public Banan(String country, double length) {
 		super(country);

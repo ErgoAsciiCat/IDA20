@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class PhoneDirectory {
-	private ArrayList<Person> persons; // personerna i katalogen
+	private final ArrayList<Person> persons; // personerna i katalogen
 
 	/** Skapar en tom telefonkatalog. */
 	public PhoneDirectory() {
-		this.persons = new ArrayList<Person>();
+		this.persons = new ArrayList<>();
 	}
 
 	public void addPerson(String name, String nbr) {
@@ -34,7 +34,7 @@ public class PhoneDirectory {
 	/** Returnerar en ny lista, sorterad stigande med avseende på namn */
 	public ArrayList<Person> getSortedPersonList() {
 		// Skriv din kod här
-		ArrayList<Person> sortedList = new ArrayList<Person>(persons);
+		ArrayList<Person> sortedList = new ArrayList<>(persons);
 
 		boolean sorted = false;
 		while (!sorted) {

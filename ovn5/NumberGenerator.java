@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class NumberGenerator {
-    private static Random rand = new Random();  // slumptalsgenerator
+    private static final Random rand = new Random();  // slumptalsgenerator
     private int secretNbr;						// det hemliga talet
     private int min;							// minsta v�rde det hemliga talet kan ha
     private int max;							// st�rsta v�rde det hamliga talet kan ha

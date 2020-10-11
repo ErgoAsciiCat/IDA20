@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class WordList {
-	private ArrayList<String> list;
+	private final ArrayList<String> list;
 
 	/** Construct a empty list. */
 	public WordList() {
-		this.list = new ArrayList<String>();
+		this.list = new ArrayList<>();
 	}
 
 	/** Appends the specified word to the end of this list. */
@@ -14,7 +14,7 @@ public class WordList {
 	}
 
 	public ArrayList<String> startsWith(String s) {
-		ArrayList<String> tempList = new ArrayList<String>();
+		ArrayList<String> tempList = new ArrayList<>();
 		for (String chk : list) {
 			if (chk.startsWith(s))
 				tempList.add(chk);

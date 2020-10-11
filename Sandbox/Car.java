@@ -1,5 +1,5 @@
 public class Car {
-	private String nbr;
+	private final String nbr;
 	private Person owner;
 
 	/** Constructs a car with the licenseNbr nbr which is 

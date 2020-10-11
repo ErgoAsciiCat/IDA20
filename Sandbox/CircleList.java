@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class CircleList {
-	private ArrayList<Shape.Circle> circles;
+	private final ArrayList<Shape.Circle> circles;
 
 	/** Constructs an empty list for circles. */
 	public CircleList() {
-		this.circles = new ArrayList<Shape.Circle>();
+		this.circles = new ArrayList<>();
 
 	}
 

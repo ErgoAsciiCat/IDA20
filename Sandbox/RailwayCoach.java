@@ -1,7 +1,5 @@
-package moodle;
-
 public class RailwayCoach {
-	private int nbrSeats;
+	private final int nbrSeats;
 	private int freeSeats;
 
 	public RailwayCoach(int nbrSeats) {

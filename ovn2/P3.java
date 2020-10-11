@@ -29,19 +29,19 @@ public class P3 {
 		System.out.println("Mata in antalet tal i talföljden");
 		tal = new double[scan.nextInt()];
 		
-		for (int i=0; i < (int)tal.length; i++ ) { //Läs in talföljden
+		for (int i = 0; i < tal.length; i++ ) { //Läs in talföljden
 			tal[i]=scan.nextDouble();
             medel = medel + tal[i];
-            if ((int)tal.length > 5) { //Om antalet tal i följden är st�rre än 5 så följ standdardavvikelsens metod
+            if (tal.length > 5) { //Om antalet tal i följden är st�rre än 5 så följ standdardavvikelsens metod
             	strd += Math.pow(tal[i],2);
             }
 		}
 		
-		medel = medel / (int)tal.length;//Beräkna medel
+		medel = medel / tal.length;//Beräkna medel
 		System.out.println(Arrays.toString(tal));
 		
-		if ((int)tal.length > 5) {
-			strd= Math.sqrt((strd-(Math.pow(medel, 2)*(int)tal.length))/((int)tal.length -1));	
+		if (tal.length > 5) {
+			strd= Math.sqrt((strd-(Math.pow(medel, 2)* tal.length))/(tal.length -1));
 			System.out.println("Standardavvikelsen är : "+ strd);
 		}else {
 			System.out.println("För få tal i talföljden för standardavvikelse.");

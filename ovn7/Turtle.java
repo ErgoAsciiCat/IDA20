@@ -4,7 +4,7 @@ public class Turtle {
 
   public int x;
   public int y;
-  private SimpleWindow w;
+  private final SimpleWindow w;
   public double beta;
   public boolean penStatus;
 
@@ -64,6 +64,8 @@ public class Turtle {
 
   /** tar reda p� sk�ldpaddans aktuella y-koordinat */
   int getY() { return y; }
+
+  int getAngle() { return (int) Math.toDegrees(beta);}
 
 
 

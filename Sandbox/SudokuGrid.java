@@ -1,8 +1,5 @@
-package moodle;
-
-
 public class SudokuGrid {
-	private int[][] sg;
+	private final int[][] sg;
 
 	/** Constructd an empty sudoku. */
 	public SudokuGrid() {
@@ -41,16 +38,13 @@ public class SudokuGrid {
 	 * a value between 1 and 9.
 	 */
 	public boolean empty(int row, int col) {
-		if (sg[row - 1][col - 1] == 0) {
-			return true;
-		}
-		return false;
-	}
+        return sg[row - 1][col - 1] == 0;
+    }
 
 	public boolean allSet() {
-		for (int r = 0; r < sg.length; r++) {
-			for (int c = 0; c < sg[r].length; c++) {
-				if (sg[r][c] == 0) {
+		for (int[] ints : sg) {
+			for (int anInt : ints) {
+				if (anInt == 0) {
 					return false;
 				}
 			}
@@ -67,7 +61,7 @@ public class SudokuGrid {
 				if (sg[row - 1][col] == x) {
 
 					System.out.println(x);
-					if (chk[x - 1] == true) {
+					if (chk[x - 1]) {
 						return false;
 					} else if (sg[row - 1][col] == 0) {
 						continue;

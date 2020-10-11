@@ -1,5 +1,5 @@
 public class City {
-	private String name;
+	private final String name;
 	private int nbr;
 
 	/**
@@ -26,9 +26,6 @@ public class City {
 	}
 
 	public boolean greaterThan(City otherCity) {
-		if (nbr > otherCity.getInhabitants()) {
-			return true;
-		}
-		return false;
-	}
+        return nbr > otherCity.getInhabitants();
+    }
 }

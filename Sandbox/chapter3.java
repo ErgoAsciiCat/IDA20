@@ -1,5 +1,3 @@
-package moodle;
-
 import java.util.*;
 
 public class chapter3 {
@@ -8,14 +6,10 @@ public class chapter3 {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		scan.close();
-		boolean included = false;
+		boolean included;
 
-		if (200 >= n && 100 <= n){
-		    included = true;
-		}else {
-		    included = false;
-		};
-		System.out.println(included);
+        included = 200 >= n && 100 <= n;
+        System.out.println(included);
 	}
 
 }

@@ -31,7 +31,7 @@ public abstract class Shape {
 
 
 	static class Circle extends Shape {
-		private double radius;
+		private final double radius;
 		private double x;
 		private double y;
 
@@ -63,7 +63,7 @@ public abstract class Shape {
 	}
 
 	class Square extends Shape {
-		private int side;
+		private final int side;
 
 		public Square(int x, int y, int side) {
 			super(x, y);

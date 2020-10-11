@@ -13,11 +13,11 @@
       <sourceFolder url="file://$MODULE_DIR$/ovn7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ovn8" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ovn5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ovn9" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ovn10" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/inl2" />
       <excludeFolder url="file://$MODULE_DIR$/inl3" />
-      <excludeFolder url="file://$MODULE_DIR$/ovn10" />
       <excludeFolder url="file://$MODULE_DIR$/ovn11" />
-      <excludeFolder url="file://$MODULE_DIR$/ovn9" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
