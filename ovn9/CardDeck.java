@@ -1,29 +1,41 @@
 import java.util.*;
 
 public class CardDeck {
-    private final List<Card> cards;
+    private final Card[] cards;
+    private int deckIndex = 0;
 
     public CardDeck(){
-        this.cards = new ArrayList<>();
+        int i=0;
+        this.cards = new Card[52];
         for (Card.Suits s : Card.Suits.values()) {
             for (Card.Ranks r : Card.Ranks.values()) {
-                cards.add(new Card(s,r));
+                cards[i++] =(new Card(s,r));
             }
         }
-
+        deckIndex = cards.length - 1;
     }
 
     public void shuffle(){
-        Collections.shuffle(cards);
+        Random rand = new Random();
+        //Collections.shuffle(cards);
+        for (int i = deckIndex; i > 0; i--){
+            Card swap = cards[i];
+            int shuffleIndex = rand.nextInt(i);
+            cards[i] = cards[shuffleIndex];
+            cards[shuffleIndex] = swap;
+
+        }
     }
 
     public boolean moreCards(){
-        return !cards.isEmpty();
+       return (deckIndex > 0);
+
     }
 
     public Card getCard(){
-        Card c = cards.get(cards.size()-1);
-        cards.remove(cards.size()-1);
+        Card c = cards[deckIndex];
+        System.out.println(c);
+        cards[deckIndex--] = null;
         return c;
     }
 }

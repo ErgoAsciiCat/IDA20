@@ -7,9 +7,9 @@ public class Card {
 		HEARTS,
 		DIAMONDS,
 		CLUBS,
-		COINS,
-		CUPS,
-		FLOWERS
+		//COINS,
+		//CUPS,
+		//FLOWERS
 	}
 
 	public enum Ranks {
@@ -24,11 +24,11 @@ public class Card {
 		NINE,
 		TEN,
 		JACK,
-		COUNT,
+		//COUNT,
 		QUEEN,
 		KING,
-		EMPEROR,
-		EMPRESS
+		//EMPEROR,
+		//EMPRESS
 	}
 	
 	/** Skapar ett spelkort med f?rgen suit (SPADES, HEARTS, DIAMONDS, CLUBS) 
@@ -46,9 +46,9 @@ public class Card {
 			case HEARTS -> 2;
 			case DIAMONDS -> 3;
 			case CLUBS -> 4;
-			case COINS -> 5;
-			case CUPS -> 6;
-			case FLOWERS -> 7;
+			//case COINS -> 5;
+			//case CUPS -> 6;
+			//case FLOWERS -> 7;
 		};
 	}
 
@@ -66,11 +66,11 @@ public class Card {
 			case NINE -> 9;
 			case TEN -> 10;
 			case JACK -> 11;
-			case COUNT -> 12;
-			case QUEEN -> 13;
-			case KING -> 14;
-			case EMPEROR -> 15;
-			case EMPRESS -> 16;
+			//case COUNT -> 12;
+			case QUEEN -> 12;
+			case KING -> 13;
+			//case EMPEROR -> 15;
+			//case EMPRESS -> 16;
 		};
 	}
 
@@ -81,9 +81,9 @@ public class Card {
 			case HEARTS -> "of Hearts";
 			case DIAMONDS -> "of Diamonds";
 			case CLUBS -> "of Clubs";
-			case COINS -> "of Coins";
-			case CUPS -> "of Cups";
-			case FLOWERS -> "of Flowers";
+			//case COINS -> "of Coins";
+			//case CUPS -> "of Cups";
+			//case FLOWERS -> "of Flowers";
 		};
 		String rankString = switch (rank) {
 			case ACE -> "Ace";
@@ -97,11 +97,11 @@ public class Card {
 			case NINE -> "Nine";
 			case TEN -> "Ten";
 			case JACK -> "Jack";
-			case COUNT -> "Count";
+			//case COUNT -> "Count";
 			case QUEEN -> "Queen";
 			case KING -> "King";
-			case EMPEROR -> "Emperor";
-			case EMPRESS -> "Empress";
+			//case EMPEROR -> "Emperor";
+			//case EMPRESS -> "Empress";
 		};
 		return rankString + " " + suitString;
 	}

@@ -101,9 +101,7 @@ public class LifeView extends Frame {
 	}
 
 	/** Tar reda på radnummer fšr den klickade rutan efter kommando nr 1 */
-	public int getRow() {
-		return lastRow;
-	}
+	public int getRow() { return lastRow; }
 
 	/** Tar reda på kolonnummer fšr den klickade rutan efter kommando nr 1 */
 	public int getCol() {
