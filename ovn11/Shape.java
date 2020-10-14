@@ -1,12 +1,25 @@
 import se.lth.cs.window.SimpleWindow;
 public abstract class Shape {
-	protected int x;
-	protected int y;
+	protected int x,y;
 
-	/** Skapar en figur med läget x,y */
 	protected Shape(int x, int y) {
 		this.x = x;
 		this.y = y;
+	}
+
+
+	/**
+	 * Returns the x coordinate of the center.
+	 */
+	public double getX() {
+		return x;
+	}
+
+	/**
+	 * Returns the y coordinate of the center.
+	 */
+	public double getY() {
+		return y;
 	}
 
 	/** Ritar upp figuren i fönstret w */
@@ -26,8 +39,9 @@ public abstract class Shape {
 
 	/** Undersöker om punkten xc,yc ligger "nära" figuren */
 	public boolean near(int xc, int yc) {
-		return Math.abs(x - xc) < 10 && Math.abs(y - yc) < 10;
+		return Math.abs(x - xc) < 80 && Math.abs(y - yc) < 50;
 	}
+
 } 
 	
 	

@@ -1,15 +1,15 @@
-public abstract class Shape {
+public abstract class ShapeOld {
 	protected int x;
 	protected int y;
 	protected double x2;
 	protected double y2;
 
-	protected Shape(int x, int y) {
+	protected ShapeOld(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
 
-	protected Shape(double x2, double y2) {
+	protected ShapeOld(double x2, double y2) {
 		this.x2 = x2;
 		this.y2 = y2;
 	}
@@ -30,7 +30,7 @@ public abstract class Shape {
 	}
 
 
-	static class Circle extends Shape {
+	static class Circle extends ShapeOld {
 		private final double radius;
 		private double x;
 		private double y;
@@ -62,7 +62,7 @@ public abstract class Shape {
 		}
 	}
 
-	class Square extends Shape {
+	class Square extends ShapeOld {
 		private final int side;
 
 		public Square(int x, int y, int side) {

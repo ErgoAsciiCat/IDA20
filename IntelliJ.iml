@@ -5,7 +5,6 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ovn4" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sandbox" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ovn2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/moodle" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cs_edaa10" isTestSource="false" />
@@ -15,9 +14,10 @@
       <sourceFolder url="file://$MODULE_DIR$/ovn9" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ovn10" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/libs" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/ovn11" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Sandbox" />
       <excludeFolder url="file://$MODULE_DIR$/inl2" />
       <excludeFolder url="file://$MODULE_DIR$/inl3" />
-      <excludeFolder url="file://$MODULE_DIR$/ovn11" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
