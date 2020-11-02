@@ -26,7 +26,7 @@ public class Life {
                     nextGen[i][k] = false;
 
                     // A new cell is born
-                else if ((grid.get(i, k)) && (getNeighbours(i, k) == 3) || getNeighbours(i,k) == 2)
+                else if ((grid.get(i, k)) && (getNeighbours(i, k) == 3) || getNeighbours(i, k) == 2)
                     nextGen[i][k] = true;
 
                     // Remains the same

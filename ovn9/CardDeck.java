@@ -2,23 +2,23 @@ import java.util.*;
 
 public class CardDeck {
     private final Card[] cards;
-    private int deckIndex = 0;
+    private int deckIndex;
 
-    public CardDeck(){
-        int i=0;
+    public CardDeck() {
+        int i = 0;
         this.cards = new Card[52];
         for (Card.Suits s : Card.Suits.values()) {
             for (Card.Ranks r : Card.Ranks.values()) {
-                cards[i++] =(new Card(s,r));
+                cards[i++] = (new Card(s, r));
             }
         }
         deckIndex = cards.length - 1;
     }
 
-    public void shuffle(){
+    public void shuffle() {
         Random rand = new Random();
         //Collections.shuffle(cards);
-        for (int i = deckIndex; i > 0; i--){
+        for (int i = deckIndex; i > 0; i--) {
             Card swap = cards[i];
             int shuffleIndex = rand.nextInt(i);
             cards[i] = cards[shuffleIndex];
@@ -27,12 +27,12 @@ public class CardDeck {
         }
     }
 
-    public boolean moreCards(){
-       return (deckIndex > 0);
+    public boolean moreCards() {
+        return (deckIndex > 0);
 
     }
 
-    public Card getCard(){
+    public Card getCard() {
         Card c = cards[deckIndex];
         System.out.println(c);
         cards[deckIndex--] = null;

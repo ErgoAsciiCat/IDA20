@@ -59,9 +59,9 @@ public class Square extends Shape {
 
     public void draw(SimpleWindow w) {
         w.moveTo(x, y);
-        w.lineTo(x+side, y);
-        w.lineTo(x+side, y+side);
-        w.lineTo(x, y+side);
+        w.lineTo(x + side, y);
+        w.lineTo(x + side, y + side);
+        w.lineTo(x, y + side);
         w.lineTo(x, y);
     }
 }

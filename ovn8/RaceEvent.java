@@ -11,22 +11,21 @@ public class RaceEvent {
         this.w = w;
     }
 
-    public void RaceStart (){
+    public void RaceStart() {
 
-            // Put participants on starting line
-            for (int i = 0 ; i < t.length; i++){
-                t[i].t.jumpTo((int)Math.round(w.getWidth() /100.0  * (i*15 + 30) ), track.yStart);
-                t[i].t.penDown();
+        // Put participants on starting line
+        for (int i = 0; i < t.length; i++) {
+            t[i].t.jumpTo((int) Math.round(w.getWidth() / 100.0 * (i * 15 + 30)), track.yStart);
+            t[i].t.penDown();
+        }
+
+        //Race continues until any participant crosses the finish line participantY = yFinish
+        while (finishLineCheck()) {
+            for (Participant u : t) {
+                u.step();
             }
-
-            //Race continues until any participant crosses the finish line participantY = yFinish
-            while (finishLineCheck() ){
-                for (Participant u : t){
-                    u.step();
-                }
-                SimpleWindow.delay(100);
-            }
-
+            SimpleWindow.delay(100);
+        }
 
 
     }
