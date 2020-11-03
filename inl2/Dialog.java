@@ -1,28 +1,31 @@
 import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
+import java.awt.*;
+
 public class Dialog {
 
-	/** Skapar ett Dialog-objekt fšr hantering av popup-dialogrutor. */
+	/** Skapar ett Dialog-objekt fÂšr hantering av popup-dialogrutor. */
 	public Dialog() {
+		UIManager.put("OptionPane.messageFont", new FontUIResource(new Font("Serif",Font.BOLD,24)));
 	}
 
-	/** Visar en dialogruta med hjŠlptexten s dŠr anvŠndaren skall mata in ett 
+	/** Visar en dialogruta med hjÂŠlptexten s dÂŠr anvÂŠndaren skall mata in ett 
 	  * heltal som returneras.
-	  * Om anvŠndaren anger ett felaktigt vŠrde eller klickar pŒ "avbryt" sŒ 
+	  * Om anvÂŠndaren anger ett felaktigt vÂŠrde eller klickar pÂŒ "avbryt" sÂŒ 
 	  * returneras Integer.MAX_VALUE.
 	  */
 	public int readInt(String s) {
 		String in = JOptionPane.showInputDialog(s);
 		try {
-			int i = Integer.parseInt(in);
-			return i;
+			return Integer.parseInt(in);
 		} catch (NumberFormatException e) {
 			return Integer.MAX_VALUE;
 		}
 	}
 
-	/** Visar en dialogruta med hjŠlptexten s dŠr anvŠndaren skall mata in en 
-	  * teckenstrŠng som returneras.
-	  * Om anvŠndaren klickar pŒ "avbryt" sŒ returneras null.
+	/** Visar en dialogruta med hjÂŠlptexten s dÂŠr anvÂŠndaren skall mata in en 
+	  * teckenstrÂŠng som returneras.
+	  * Om anvÂŠndaren klickar pÂŒ "avbryt" sÂŒ returneras null.
 	  */
 	public String readString(String s) {
 		String in = JOptionPane.showInputDialog(s);
@@ -33,7 +36,7 @@ public class Dialog {
 		}
 	}
 
-	/** Visar en dialogruta med textstrŠngen s. */
+	/** Visar en dialogruta med textstrÂŠngen s. */
 	public void printString(String s) {
 	   JOptionPane.showMessageDialog(null, s, "",JOptionPane.PLAIN_MESSAGE);
 	}

@@ -16,8 +16,8 @@
       <sourceFolder url="file://$MODULE_DIR$/libs" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/ovn11" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/inl1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inl2" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Sandbox" />
-      <excludeFolder url="file://$MODULE_DIR$/inl2" />
       <excludeFolder url="file://$MODULE_DIR$/inl3" />
     </content>
     <orderEntry type="inheritedJdk" />
